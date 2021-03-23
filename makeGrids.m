@@ -5,37 +5,40 @@ clear all;
 clearvars; clc;
 
 % Which system am I using?
-if ismac    % On Mac
-    basedir = '/Users/yulong/GitHub/';
-    basedir2 = '/Volumes/Yulong/';
-    addpath([basedir,'fvcomtoolbox/']);
-    addpath([basedir,'fvcomtoolbox/fvcom_prepro/']);
-    addpath([basedir,'fvcomtoolbox/utilities/']);
-    addpath([basedir,'fvcomtoolbox/custom/']);
-elseif isunix       % Unix?
-    basedir = '/home/usr0/n70110d/';
-    addpath([basedir,'github/fvcomtoolbox/']);
-    addpath([basedir,'github/fvcomtoolbox/fvcom_prepro/']);
-    addpath([basedir,'github/fvcomtoolbox/utilities/']);
-    addpath([basedir,'github/fvcomtoolbox/custom/']);
-elseif ispc     % Or Windows?
-    basedir = 'C:/Users/Yulong WANG/Documents/GitHub/';      
-    addpath([basedir,'fvcomtoolbox/']);
-    addpath([basedir,'fvcomtoolbox/fvcom_prepro/']);
-    addpath([basedir,'fvcomtoolbox/utilities/']);
-    addpath([basedir,'fvcomtoolbox/custom/']);
-end
+% if ismac    % On Mac
+%     basedir = '/Users/yulong/GitHub/';
+%     basedir2 = '/Volumes/Yulong/';
+%     addpath([basedir,'fvcomtoolbox/']);
+%     addpath([basedir,'fvcomtoolbox/fvcom_prepro/']);
+%     addpath([basedir,'fvcomtoolbox/utilities/']);
+%     addpath([basedir,'fvcomtoolbox/custom/']);
+% elseif isunix       % Unix?
+%     basedir = '/home/usr0/n70110d/';
+%     addpath([basedir,'github/fvcomtoolbox/']);
+%     addpath([basedir,'github/fvcomtoolbox/fvcom_prepro/']);
+%     addpath([basedir,'github/fvcomtoolbox/utilities/']);
+%     addpath([basedir,'github/fvcomtoolbox/custom/']);
+% elseif ispc     % Or Windows?
+%     basedir = 'C:/Users/Yulong WANG/Documents/GitHub/';      
+%     addpath([basedir,'fvcomtoolbox/']);
+%     addpath([basedir,'fvcomtoolbox/fvcom_prepro/']);
+%     addpath([basedir,'fvcomtoolbox/utilities/']);
+%     addpath([basedir,'fvcomtoolbox/custom/']);
+% end
 
 %% IO setting
 
-ncfile.name = '/Volumes/GoogleDrive/Shared drives/Wang Yulong 2017.9/data/bathymetry/meiji_elevation.nc';
-otfile =      '/Volumes/GoogleDrive/Shared drives/Wang Yulong 2017.9/data/bathymetry/meiji_elevation_50grids.csv';
+% ncfile.name = '/Volumes/GoogleDrive/Shared drives/Wang Yulong 2017.9/data/bathymetry/meiji_elevation.nc';
+% otfile =      '/Volumes/GoogleDrive/Shared drives/Wang Yulong 2017.9/data/bathymetry/meiji_elevation_50grids.csv';
 
 % ncfile.name = '/Volumes/Yulong/GitHub/database_tokyobay/FVCOM_case/depth_0090-05+06+07.nc';
 % otfile = '/Volumes/GoogleDrive/Shared drives/Wang Yulong 2017.9/data/bathymetry/reiwa_elevation_50grids.csv';
 
 % ncfile.name = './inp/meiji_elevation.nc';
 % otfile = './otp/meiji_elevation_500grids.csv';
+
+ncfile.name = './meiji_elevation.nc';
+otfile =      './meiji_elevation_50grids.csv';
 
 %% READ
 
