@@ -37,8 +37,11 @@ clearvars; clc;
 % ncfile.name = './inp/meiji_elevation.nc';
 % otfile = './otp/meiji_elevation_500grids.csv';
 
-ncfile.name = './meiji_elevation.nc';
-otfile =      './meiji_elevation_50grids.csv';
+% ncfile.name = './meiji_elevation.nc';
+% otfile =      './meiji_elevation_50grids.csv';
+
+ncfile.name = './reiwa_elevation.nc';
+otfile =      './reiwa_elevation_50grids.csv';
 
 %% READ
 
